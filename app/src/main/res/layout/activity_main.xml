@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/num2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonmulti"
+        app:layout_constraintStart_toStartOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <Button
+        android:id="@+id/buttonsumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUMAR"
+        app:layout_constraintBottom_toTopOf="@+id/restar"
+        app:layout_constraintEnd_toStartOf="@+id/buttondiv"
+        app:layout_constraintStart_toEndOf="@+id/buttonmulti" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="325dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="177dp"
+        android:text="TextView"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restar" />
+
+    <Button
+        android:id="@+id/restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Restar"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/buttonsumar"
+        app:layout_constraintTop_toBottomOf="@+id/buttondiv" />
+
+    <Button
+        android:id="@+id/buttonmulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="65dp"
+        android:text="Multi"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/buttonsumar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <Button
+        android:id="@+id/buttondiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="20dp"
+        android:text="Dividir"
+        app:layout_constraintBottom_toTopOf="@+id/restar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonsumar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
