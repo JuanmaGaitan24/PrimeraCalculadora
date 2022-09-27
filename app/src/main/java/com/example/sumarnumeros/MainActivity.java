@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                     int div = n1 / n2;
                     res.setText(""+div);
                 }catch (Exception e){
-                    res.setText("Infinito");
+                    res.setText(" Infinito");
                 }
             }
         });
